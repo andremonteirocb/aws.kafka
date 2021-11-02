@@ -12,7 +12,6 @@ namespace Fundamentos.AWS.Kafka.Producer
             var config = new ProducerConfig { BootstrapServers = "127.0.0.1:9092" };
 
             using var p = new ProducerBuilder<Null, string>(config).Build();
-
             {
                 try
                 {

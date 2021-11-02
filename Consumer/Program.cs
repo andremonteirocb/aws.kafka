@@ -16,7 +16,6 @@ namespace Fundamentos.AWS.Kafka.Consumer
             };
 
             using var c = new ConsumerBuilder<Ignore, string>(conf).Build();
-
             {
                 c.Subscribe("test-topic");
 
